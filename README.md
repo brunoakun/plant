@@ -18,8 +18,8 @@
 
 4.- Copiar cada sección del index.html de la plantilla en el componenete que le corresponda (p.ej header.component.html)
 
-## 
-2.-The best way to include an external, plain javascript, library is to install it using npm install ... and then add all the .js and .css files (from the node_modules folder) in your angular.json file respectively in the scripts and styles properties. Those scripts and styles will be bundled with your application and in every component you can access the global variables they define.
+## Instalaciones de librerias externas, JQuery
+- The best way to include an external, plain javascript, library is to install it using npm install ... and then add all the .js and .css files (from the node_modules folder) in your angular.json file respectively in the scripts and styles properties. Those scripts and styles will be bundled with your application and in every component you can access the global variables they define.
 
 For example you can npm install jQuery, add it in the angular.json file in the script property like this:
 
