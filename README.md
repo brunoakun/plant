@@ -1,27 +1,19 @@
 # Plant
+## Adatar una plantilla de Bootstrap a Angular
+1.- Descargar plantilla bootstrap y añadir carpeta de la descarga en el área de trabajo.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
+- Crear módulo/s según los apartados (formulario)
+- Crear los componentes del módulo (cabecera, form, footer)
+- En cada módulo creado, hacer los exports de componentes (formulario.module)
+- Desde el app.module, hacer el import del módulo formulario
 
-## Development server
+## 
+2.-The best way to include an external, plain javascript, library is to install it using npm install ... and then add all the .js and .css files (from the node_modules folder) in your angular.json file respectively in the scripts and styles properties. Those scripts and styles will be bundled with your application and in every component you can access the global variables they define.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+For example you can npm install jQuery, add it in the angular.json file in the script property like this:
 
-## Code scaffolding
+"scripts": ["../node_modules/jquery/dist/jquery.min.js"]
+declare it on top like this:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+import * as $ from 'jquery';
+and then you can use it as you would normally
